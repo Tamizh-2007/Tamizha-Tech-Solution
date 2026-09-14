@@ -1,0 +1,7 @@
+import Link from "next/link";
+
+const items = ["Enquiries","Projects","Services","Internships","Applications","Testimonials","Settings"];
+
+export default function Dashboard() {
+  return <main className="min-h-screen bg-slate-100"><div className="flex min-h-screen"><aside className="hidden w-64 bg-slate-950 p-6 text-white md:block"><h2 className="text-xl font-bold">TAMIZHA TECH</h2><nav className="mt-10 space-y-2">{items.map((item)=><Link key={item} href="#" className="block rounded-xl px-4 py-3 text-slate-300 hover:bg-slate-800 hover:text-white">{item}</Link>)}</nav></aside><section className="flex-1 p-6 md:p-10"><h1 className="text-3xl font-bold">Dashboard</h1><p className="mt-2 text-slate-500">Website administration overview.</p><div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{["Total Enquiries","New Enquiries","Projects","Applications"].map((x)=><div key={x} className="rounded-2xl bg-white p-6 shadow-sm"><p className="text-sm text-slate-500">{x}</p><p className="mt-3 text-3xl font-bold">0</p><p className="mt-2 text-xs text-slate-400">Connect database to display live data</p></div>)}</div><div className="mt-8 rounded-2xl bg-white p-8"><h2 className="text-xl font-bold">Admin foundation ready</h2><p className="mt-3 text-slate-600">Next phase connects Supabase authentication, database records and CMS controls.</p></div></section></div></main>;
+}

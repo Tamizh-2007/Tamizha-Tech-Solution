@@ -1,0 +1,6 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
+export default function About() {
+  return <><Navbar/><main className="mx-auto max-w-7xl px-6 py-24"><p className="font-semibold text-blue-600">ABOUT US</p><h1 className="mt-3 text-5xl font-bold">Technology Built Around Your Vision.</h1><p className="mt-8 max-w-3xl text-lg leading-8 text-slate-600">Tamizha Tech Solution focuses on practical digital solutions, modern design and technology-driven development.</p><div className="mt-16 grid gap-6 md:grid-cols-3"><div className="rounded-2xl border p-7"><h2 className="text-xl font-bold">Our Vision</h2><p className="mt-3 text-slate-600">Create meaningful digital experiences through technology and creativity.</p></div><div className="rounded-2xl border p-7"><h2 className="text-xl font-bold">Our Mission</h2><p className="mt-3 text-slate-600">Understand requirements and turn ideas into useful digital products.</p></div><div className="rounded-2xl border p-7"><h2 className="text-xl font-bold">Leadership</h2><p className="mt-3 text-slate-600"><strong>Tamizharasan</strong><br/>Founder & CEO</p></div></div></main><Footer/></>;
+}
